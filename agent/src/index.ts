@@ -123,7 +123,7 @@ import { zxPlugin } from "@elizaos/plugin-0x";
 import Database from "better-sqlite3";
 import fs from "fs";
 import net from "net";
-import path from "path";
+import path from "node:path";
 import { fileURLToPath } from "url";
 import yargs from "yargs";
 import { emailPlugin } from "@elizaos/plugin-email";
