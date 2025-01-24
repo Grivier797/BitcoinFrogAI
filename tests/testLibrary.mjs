@@ -21,13 +21,13 @@ function logError(error) {
 
 async function runProcess(command, args = [], directory = projectRoot()) {
     try {
-        throw new Exception("Not implemented yet"); // TODO
-        // const result = await $`cd ${directory} && ${command} ${args}`;
-        return result.stdout.trim();
+      // Remove the throw Exception line
+      const result = await $`cd ${directory} && ${command} ${args}`;
+      return result.stdout.trim();
     } catch (error) {
-        throw new Error(`Command failed: ${error.message}`);
+      throw new Error(`Command failed: ${error.message}`);
     }
-}
+  }
 
 async function installProjectDependencies() {
     log("Installing dependencies...");
