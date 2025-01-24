@@ -22,7 +22,6 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: |
-          brew install pkg-config pixman
           pnpm install
       - name: Run smoke tests
         run: pnpm run smokeTests
